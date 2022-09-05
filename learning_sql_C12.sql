@@ -13,4 +13,4 @@ txn_id txn_date account_id txn_type_cd amount
 1001 2019-05-15 123 C 500
 1002 2019-06-01 789 C 75
 Use txn_type_cd = 'C' to indicate a credit (addition), and use txn_type_cd = 'D'
-to indicate a debit (subtraction).
+to indicate a debit (subtraction).*/
