@@ -27,8 +27,9 @@ mysql> SELECT c.first_name, c.last_name, a.address, ct.city
 /*EXERCISE 5-2
 Write a query that returns the title of every film in which an actor with the first name
 JOHN appeared.*/
+
+
 /*EXERCISE 5-3
-
-
 Construct a query that returns all addresses that are in the same city. You will need to
 join the address table to itself, and each row should include two different addresses.*/
+
