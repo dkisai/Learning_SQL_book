@@ -6,12 +6,33 @@ operations?
 • A intersect B
 • A except B*/
 
+/* 
+{L M N O P Q R S T} 
+{L M N O P P Q R S T}
+{P}
+{L M N O}
+*/
 
 /*EXERCISE 6-2
 Write a compound query that finds the first and last names of all actors and customers
 whose last name starts with L.*/
 
+SELECT first_name, last_name
+FROM actor
+WHERE last_name LIKE 'L%'
+UNION
+SELECT first_name, last_name
+FROM customer
+WHERE last_name LIKE 'L%';
 
 /*EXERCISE 6-3
 Sort the results from Exercise 6-2 by the last_name column.*/
 
+SELECT first_name, last_name
+FROM actor
+WHERE last_name LIKE 'L%'
+UNION
+SELECT first_name, last_name
+FROM customer
+WHERE last_name LIKE 'L%'
+ORDER BY last_name;
